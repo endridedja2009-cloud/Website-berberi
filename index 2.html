@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTUR'S CUTS — Barber Shop Tiranë</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#f5f5f5;line-height:1.5}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(11,11,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid #252525}
+.nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:2px;font-size:20px}
+.navlinks{display:flex;gap:22px;font-size:13px;color:#bbb}
+.btn{display:inline-block;background:#fff;color:#111;padding:13px 19px;border-radius:4px;font-weight:800;font-size:13px}
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 22px 70px;background:radial-gradient(circle at 50% 35%,#292929 0,#101010 38%,#080808 75%)}
+.kicker{font-size:12px;letter-spacing:4px;color:#aaa;margin-bottom:18px}
+h1{font-size:clamp(55px,12vw,120px);line-height:.88;letter-spacing:-5px}
+.hero p{max-width:600px;margin:28px auto;color:#bbb;font-size:16px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.outline{border:1px solid #444;padding:12px 19px;border-radius:4px;font-weight:700;font-size:13px}
+section{max-width:1100px;margin:auto;padding:90px 22px}
+.title{font-size:38px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid #292929;background:#121212;padding:28px;border-radius:8px}
+.card h3{font-size:20px;margin-bottom:8px}
+.price{font-size:25px;font-weight:900;margin-top:18px}
+.muted{color:#999}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.photo{height:260px;background:linear-gradient(135deg,#202020,#111);border:1px solid #292929;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#666;letter-spacing:2px;font-size:11px}
+.review{font-size:15px}
+.stars{margin-bottom:12px;letter-spacing:2px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact .card{min-height:150px}
+footer{text-align:center;border-top:1px solid #222;padding:30px 20px;color:#777;font-size:12px}
+@media(max-width:700px){
+.navlinks{display:none}.grid,.gallery,.contact{grid-template-columns:1fr}
+.photo{height:220px}section{padding:70px 18px}.title{font-size:31px}
+h1{letter-spacing:-3px}.hero{min-height:88vh}
+}
+</style>
+</head>
+<body>
+<nav><div class="nav">
+<div class="logo">ARTUR'S CUTS</div>
+<div class="navlinks"><a href="#services">Shërbime</a><a href="#gallery">Galeria</a><a href="#reviews">Reviews</a><a href="#contact">Kontakt</a></div>
+<a class="btn" href="tel:+355685641909">REZERVO</a>
+</div></nav>
+
+<header class="hero">
+<div>
+<div class="kicker">BARBER SHOP • TIRANË</div>
+<h1>LOOK<br>SHARP.</h1>
+<p>Prerje moderne, mjekër e rregulluar dhe stil i pastër. Një pamje që të shkon.</p>
+<div class="actions">
+<a class="btn" href="tel:+355685641909">📞 Telefono</a>
+<a class="outline" href="#services">Shiko shërbimet</a>
+</div>
+</div>
+</header>
+
+<section id="services">
+<h2 class="title">Shërbimet</h2>
+<div class="grid">
+<div class="card"><h3>Haircut</h3><p class="muted">Prerje sipas stilit që dëshiron.</p><div class="price">—</div></div>
+<div class="card"><h3>Beard</h3><p class="muted">Formësim dhe rregullim i mjekrës.</p><div class="price">—</div></div>
+<div class="card"><h3>Hair + Beard</h3><p class="muted">Paketa komplet për një look të pastër.</p><div class="price">—</div></div>
+</div>
+<p class="muted" style="margin-top:18px;font-size:12px">* Çmimet plotësohen sipas informacionit të pronarit.</p>
+</section>
+
+<section id="gallery">
+<h2 class="title">Galeria</h2>
+<div class="gallery">
+<div class="photo">FOTO 01</div><div class="photo">FOTO 02</div><div class="photo">FOTO 03</div>
+<div class="photo">FOTO 04</div><div class="photo">FOTO 05</div><div class="photo">FOTO 06</div>
+</div>
+<p class="muted" style="margin-top:16px;font-size:12px">Fotot zëvendësohen me fotot reale të barbershop-it.</p>
+</section>
+
+<section id="reviews">
+<h2 class="title">Çfarë thonë klientët</h2>
+<div class="grid">
+<div class="card review"><div class="stars">★★★★★</div>“Shërbim shumë i mirë dhe prerje shumë e pastër.”<br><span class="muted">— Demo review</span></div>
+<div class="card review"><div class="stars">★★★★★</div>“Atmosferë e mirë dhe staf profesional.”<br><span class="muted">— Demo review</span></div>
+<div class="card review"><div class="stars">★★★★★</div>“Do rikthehem përsëri.”<br><span class="muted">— Demo review</span></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Na gjeni</h2>
+<div class="contact">
+<div class="card"><h3>📍 Lokacioni</h3><p class="muted">Rruga Mine Peza, Tiranë</p></div>
+<div class="card"><h3>📞 Rezervo</h3><p class="muted">+355 68 564 1909</p><br><a class="btn" href="tel:+355685641909">Telefono tani</a></div>
+</div>
+</section>
+
+<footer>© ARTUR'S CUTS • WEBSITE DEMO</footer>
+</body>
+</html>
